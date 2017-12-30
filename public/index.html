@@ -12,30 +12,33 @@
     <link rel="stylesheet" href="css/style.css?ts=undefined">
   </head>
   <body class="page paper-denim">
-    <div class="popup-auth">
-      <header class="popup-auth__header">Войти в личный кабинет</header>
-      <div class="popup-auth__body">
-        <div class="popup-auth__row">
-          <label class="field-with-icon field-offset">
-            <input class="field-with-icon__field field available">
-            <div class="field-with-icon__icon"><i class="fa fa-user"></i></div>
-          </label>
+    <div class="wrapper-popup-auth">
+      <div class="popup-auth">
+        <header class="popup-auth__header">Войти в личный кабинет</header>
+        <div class="popup-auth__body">
+          <div class="popup-auth__row">
+            <label class="field-with-icon field-offset">
+              <input class="field-with-icon__field field available">
+              <div class="field-with-icon__icon"><i class="fa fa-user"></i></div>
+            </label>
+          </div>
+          <div class="popup-auth__row">
+            <label class="field-with-icon">
+              <input class="field-with-icon__field field available" type="password">
+              <div class="field-with-icon__icon"><i class="fa fa-lock"></i></div>
+            </label>
+          </div>
         </div>
-        <div class="popup-auth__row">
-          <label class="field-with-icon">
-            <input class="field-with-icon__field field available" type="password">
-            <div class="field-with-icon__icon"><i class="fa fa-lock"></i></div>
+        <footer class="popup-auth__foo">
+          <label class="popup-auth__remember label-with-checkbox offset-r-4">
+            <input class="field-checkbox" type="checkbox">Запомнить меня
           </label>
-        </div>
+          <button class="popup-auth__button offset-r-4 button button_theme_smoke">Отмена</button>
+          <button class="popup-auth__button button button_theme_denim" type="submit">Войти</button>
+        </footer>
       </div>
-      <footer class="popup-auth__foo">
-        <label class="popup-auth__remember label-with-checkbox offset-r-4">
-          <input class="field-checkbox" type="checkbox">Запомнить меня
-        </label>
-        <button class="popup-auth__button offset-r-4 button button_theme_smoke">Отмена</button>
-        <button class="popup-auth__button button button_theme_denim" type="submit">Войти</button>
-      </footer>
     </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.13/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
