@@ -44,6 +44,7 @@
   
   &:focus {
   	border-color $color-warm-grey
+  	outline none
   }
   
   &:invalid,
@@ -193,6 +194,10 @@
 	
 	@media (min-width 640px) {
 		min-width 160px
+	}
+	
+	&:focus {
+		outline none
 	}
 	
 	&:hover {
