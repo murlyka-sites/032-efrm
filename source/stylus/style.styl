@@ -1,0 +1,252 @@
+@import "inc/variables"
+
+.page {
+	padding 0
+	margin 0
+	font-family "Open Sans", sans-serif
+}
+
+.paper-denim {
+	background-color $color-denim
+}
+
+.field {
+	box-sizing border-box
+	display inline-block
+	height 32px
+	border-radius 4px
+  background-color white
+  border solid 2px $color-white-two
+  font-family 'Open Sans', sans-serif
+  
+  @media (min-width 420px) {
+  	height 45px
+  }
+  
+  @media (min-width 480px) {
+  	height 60px
+  	font-size 16px 
+  	font-weight 600 
+  }
+  
+  &:focus {
+  	border-color $color-warm-grey
+  }
+  
+  &:invalid,
+  &_invalide {
+  	border-color $color-pink-red
+		
+  }
+}
+
+.field-radio,
+.field-checkbox {
+	box-sizing border-box
+	width 10px
+	height 10px
+	margin 3px
+	border solid 1px $color-white-two
+	border-radius 2px
+	
+	@media (min-width 640px) {
+		margin 3px 10px
+	}
+}
+
+.field-with-icon {
+	box-sizing border-box
+	position relative
+	display block
+	
+	&__field {
+		padding-left 40px
+		
+		@media (min-width 420px) {
+			padding-left 55px 
+		}
+		
+		@media (min-width 480px) {
+			padding-left 80px
+		}
+	}
+	
+	&__field:focus + &__icon {
+		border-color $color-warm-grey
+		color $color-warm-grey
+	}
+	
+	&__icon {
+		position absolute
+		top 0
+		left 0
+		width 28px
+		height 100%
+		display flex
+		align-items center
+		justify-content center
+		color $color-white-two
+		border-right 2px solid $color-white-two
+		
+		@media (min-width 420px) {
+			width 45px
+		}
+		
+		@media (min-width 480px) {
+			width 50px
+		}
+	}
+}
+
+.field-offset {
+	margin-bottom 10px
+	
+	@media (min-width 420px) {
+		margin-bottom 15px
+	}
+	
+	@media (min-width 480px) {
+		margin-bottom 24px
+	}
+}
+
+.label-with-checkbox,
+.lable-with-radio {
+	display flex
+	align-items center
+	font-size 10px 
+	color $color-warm-grey
+	
+	@media (min-width 420px) {
+		font-size 12px 
+	}
+	
+	@media (min-width 640px) {
+		font-size 16px 
+	}
+}
+
+.button {
+	line-height 1 
+	box-sizing border-box
+	display inline-block
+	min-width 80px
+	padding 10px 10px 9px
+	border-radius 4px
+	border none
+	font-size 11px
+	font-weight 600
+	text-transform uppercase
+	text-align center
+	font-family "Open Sans", sans-serif
+	
+	@media (min-width 420px) {
+		min-width 100px
+	}
+	
+	@media (min-width 520px) {
+		min-width 120px
+		padding 20px 
+		font-size 16px 
+	}
+	
+	@media (min-width 640px) {
+		min-width 160px
+	}
+	
+	&:hover {
+		box-shadow 0 0 12px 0 rgba(46, 46, 46, 0.4)
+	}
+	
+	&_theme {
+		&_smoke {
+			background $color-smoke
+			color $color-warm-grey
+			
+			
+			&:active {
+				background $color-white-two
+			}
+		}
+		
+		&_denim {
+			background $color-denim
+			color white
+			
+			&:active {
+				background $color-steel-blue
+			}
+		}
+	}
+}
+
+.available {
+	display block
+	width 100%
+}
+
+.popup-auth {
+	width 320px
+	margin 20px auto
+	border-radius 4px
+	overflow hidden
+	background white
+	max-width 600px
+	
+	@media (min-width 360px) {
+		width auto
+		margin 20px
+	}
+	
+	@media (min-width 640px) {
+		margin 20px auto
+	}
+	
+	&__header {
+		padding 10px 
+		background $color-steel-blue
+		color white
+		font-size 12px
+		font-weight 600 
+		text-align center
+		
+		@media (min-width 480px) {
+			font-size 16px
+			padding 15px
+		}
+		
+		@media (min-width 600px) {
+			font-size 24px 
+			padding 20px
+		}
+	}
+	
+	&__body {
+		padding 14px 20px
+		
+		@media (min-width 480px) {
+			padding 24px 40px 
+		}
+	}
+	
+	&__foo {
+		display flex
+		padding 0 20px 24px
+		
+		@media (min-width 480px) {
+			padding 14px 40px 
+		}
+	}
+	
+	&__remember {
+		margin-right auto 
+	}
+	
+	&__button {
+		margin-right 4px
+		
+		@media (min-width 520px) {
+			margin-right 10px
+		}
+	}
+}

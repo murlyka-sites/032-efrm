@@ -1,0 +1,33 @@
+doctype html
+html(lang="ru")
+	head
+		title Онлайн-школа русского языка
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+		meta(name="SKYPE_TOOLBAR", content="SKYPE_TOOLBAR_PARSER_COMPATIBLE")
+		meta(content="telephone=no", name="format-detection")
+		link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic" rel="stylesheet")
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+		//- link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css")
+		link(rel="stylesheet", href="css/style.css?ts=" + ts)
+	body.page.paper-denim
+		.popup-auth
+			header.popup-auth__header Войти в личный кабинет
+			.popup-auth__body
+				.popup-auth__row
+					label.field-with-icon.field-offset
+						input.field-with-icon__field.field.available
+						.field-with-icon__icon: i.fa.fa-user
+				.popup-auth__row
+					label.field-with-icon
+						input.field-with-icon__field.field.available(type="password")
+						.field-with-icon__icon: i.fa.fa-lock
+			footer.popup-auth__foo
+				label.popup-auth__remember.label-with-checkbox.offset-r-4
+					input.field-checkbox(type="checkbox") 
+					| Запомнить меня
+				button.popup-auth__button.offset-r-4.button.button_theme_smoke Отмена
+				button.popup-auth__button.button.button_theme_denim(type="submit") Войти
+
+		script(src="js/main.js")
