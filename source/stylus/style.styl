@@ -14,10 +14,13 @@
 	box-sizing border-box
 	display inline-block
 	height 32px
+	padding 5px
 	border-radius 4px
   background-color white
   border solid 2px $color-white-two
   font-family 'Open Sans', sans-serif
+  font-size 12px
+  font-weight 600
   
   @media (min-width 420px) {
   	height 45px
@@ -27,6 +30,7 @@
   	height 60px
   	font-size 16px 
   	font-weight 600 
+  	padding 10px 20px
   }
   
   &:focus {
@@ -38,7 +42,15 @@
   	border-color $color-pink-red
 		
   }
+  
+  &_textarea {
+  	height 130px
+  	padding 15px
+  	resize none
+  }
 }
+
+
 
 .field-radio,
 .field-checkbox {
@@ -110,10 +122,30 @@
 	}
 }
 
+.label-with-field {
+	display block
+	padding-top 10px
+	
+	&__label {
+		font-size 12px 
+		color $color-warm-grey
+		
+		@media (min-width 480px) {
+			padding-top 15px
+			font-size 16px 
+		}
+		
+		@media (min-width 640px) {
+			padding-top 20px
+			font-size 20px 
+		}
+	}
+}
+
 .label-with-checkbox,
-.lable-with-radio {
+.label-with-radio {
 	display flex
-	align-items center
+	align-items flex-start
 	font-size 10px 
 	color $color-warm-grey
 	
@@ -247,6 +279,70 @@
 		
 		@media (min-width 520px) {
 			margin-right 10px
+		}
+	}
+}
+
+.data-input {
+	background white
+	
+	&__header {
+		font-size 22px 
+		font-weight 600
+		line-height 1.2
+		padding 20px
+		text-align center
+		background $color-steel-blue
+		color white
+		
+		@media (min-width 600px) {
+			padding 30px
+			font-size 36px 
+		}
+	}
+	
+	&__body {
+		padding 15px 20px
+		margin-bottom 30px
+		max-width 640px
+		margin auto
+		
+		@media (min-width 640px) {
+			padding 15px 30px
+		}
+	}
+	
+	&__foo {
+		padding 30px 20px
+		display flex
+		justify-content center
+		max-width 640px
+		margin auto
+		
+		@media (min-width 640px) {
+			padding 40px 30px
+		}
+	}
+	
+	&__button {
+		flex auto
+		width 130px
+		padding 14px 10px
+		font-size 16px 
+		margin-right 10px
+		
+		@media (min-width 480px) {
+			padding 20px 10px
+			font-size 20px 
+		}
+		
+		@media (min-width 640px) {
+			padding 30px 10px
+			font-size 30px 
+		}
+		
+		&:last-child {
+			margin-right 0
 		}
 	}
 }
