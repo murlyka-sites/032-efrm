@@ -1,16 +1,8 @@
 doctype html
 html(lang="ru")
 	head
-		title Онлайн-школа русского языка
-		meta(charset="UTF-8")
-		meta(http-equiv="X-UA-Compatible" content="IE=edge")
-		meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
-		meta(name="SKYPE_TOOLBAR", content="SKYPE_TOOLBAR_PARSER_COMPATIBLE")
-		meta(content="telephone=no", name="format-detection")
-		link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic" rel="stylesheet")
-		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
-		//- link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css")
-		link(rel="stylesheet", href="css/style.css?ts=" + ts)
+		title Войти в личный кабинет
+		include pug/head.pug
 	body.page.paper-denim
 		.popup-auth
 			header.popup-auth__header Войти в личный кабинет
@@ -30,4 +22,4 @@ html(lang="ru")
 				button.popup-auth__button.offset-r-4.button.button_theme_smoke Отмена
 				button.popup-auth__button.button.button_theme_denim(type="submit") Войти
 
-		script(src="js/main.js")
+		include pug/scripts.pug
