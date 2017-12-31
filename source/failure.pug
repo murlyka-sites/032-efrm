@@ -1,0 +1,17 @@
+doctype html
+html(lang="ru")
+	head
+		title Вы не записались!
+		include pug/head.pug
+	body.page
+		.answer
+			img.answer__icon(src="images/cancel.svg" width="164" height="164" alt="cancel" role="presentation")
+			.answer__title.color-lipstick-two Вы не записались!
+			.answer__explanations 
+				| Извините за неудобства.
+				br
+				| Вы можете попробовать еще раз.
+			footer.answer__foo
+				button.answer__button.answer__button_offset.button.button_theme_denim Попробовать снова!
+				button.answer__button.button.button_theme_smoke Выйти
+		include pug/scripts.pug

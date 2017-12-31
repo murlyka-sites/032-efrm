@@ -4,18 +4,19 @@ html(lang="ru")
 		title Вы записались!
 		include pug/head.pug
 	body.page
-		.success
-			.success__icon: i.fa.fa-check-circle
-			.success__title Вы записались!
-			.success__info
-				.success__row
+		.answer
+			.answer__icon: i.fa.fa-check-circle
+			.answer__title.color-denim Вы записались!
+			.answer__info
+				.answer__row
 					span.color-warm-grey Дата:
 					|  Вторник, 20.11.2017, в 13:00
-				.success__row
+				.answer__row
 					span.color-warm-grey Услуга:
 					|  Диагностика подвески
-				.success__row
+				.answer__row
 					span.color-warm-grey Мастер:
 					|  Навальный Владимир
-			button.success__button.button.button_theme_denim Готово!
+			footer.answer__foo
+				button.answer__button.button.button_theme_denim Готово!
 		include pug/scripts.pug
