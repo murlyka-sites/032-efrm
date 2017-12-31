@@ -7,9 +7,12 @@
 	}
 	
 	&__item {
-		display flex
 		position relative
 		border-bottom 2px solid $color-denim
+		
+		@media (min-width 768px) {
+			display flex
+		}
 		
 		&:last-child {
 			border-bottom none
