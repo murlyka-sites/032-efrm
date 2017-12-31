@@ -80,9 +80,7 @@ body {
 
 .field-checkbox {
 	appearance none
-	border solid 2px $color-white-two
 	border-radius 2px
-	
 	
 	&:checked {
 		background url(../images/checked.svg) center / 160%
@@ -92,15 +90,17 @@ body {
 .field-radio,
 .field-checkbox {
 	box-sizing border-box
-	width 10px
-	height 10px
+	width 12px
+	height 12px
 	margin 0 3px 0 0	
 	flex none
+	border solid 1px $color-white-two
 	
 	@media (min-width 640px) {
 		width 15px 
 		height 15px
 		margin 0 5px 0 0
+		border-width 2px
 	}
 }
 
@@ -113,7 +113,7 @@ body {
 		padding-left 40px
 		
 		@media (min-width 420px) {
-			padding-left 55px 
+			padding-left 55px
 		}
 		
 		@media (min-width 480px) {
@@ -174,19 +174,20 @@ body {
 
 .label-with-field {
 	display block
-	padding-top 10px
+	padding-top 5px
 	
 	&__label {
+		padding-bottom 5px 
 		font-size 12px 
 		color $color-warm-grey
 		
 		@media (min-width 480px) {
-			padding-top 15px
+			padding-top 10px
 			font-size 16px 
 		}
 		
 		@media (min-width 640px) {
-			padding-top 20px
+			padding-top 10px
 			font-size 20px 
 		}
 	}
@@ -413,13 +414,15 @@ body {
 		}
 		
 		@media (min-width 640px) {
-			padding 30px 10px
+			padding 25px 10px
+			margin-right 15px 
 			font-size 30px 
 		}
 		
 		&:last-child {
 			margin-right 0
 		}
+		
 	}
 }
 
