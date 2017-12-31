@@ -8,9 +8,10 @@ $('.top-menu:first-child .top-menu__button').click(function() {
 
 	
 
-	if(window.width > 768) {
+	if(document.body.clientWidth > 768) {
 		$(this).next().toggleClass("hidden");
 		return false;
+	}
 });
 
 $('.dropdown__item').click(function() {
