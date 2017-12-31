@@ -1,0 +1,57 @@
+.top-menu {
+	background $color-steel-blue 
+	
+	@media (min-width 768px) {
+		display flex
+		align-items stretch		
+	}
+	
+	&__item {
+		position relative
+	}
+
+	&__button {
+		box-sizing border-box
+		display block
+		height 100%
+		border-bottom 2px solid $color-denim
+		font-size 14px 
+		font-weight 600 
+		line-height 1
+		padding 20px
+		text-align center 
+		text-decoration none
+		color white
+		
+		@media (min-width 768px) {
+			border-bottom none 
+			padding 25px 40px
+		}
+		
+		@media (min-width 992px) {
+			display flex
+			align-items center
+			text-align left
+			font-size 20px 
+		}
+		
+		&_active {
+			background $color-denim
+		}
+		
+		&:hover {
+			background $color-denim
+		}
+		
+		&:last-child {
+			border-bottom none
+			border none
+		}
+	}
+	
+	&__icon {
+		display inline-block
+		margin-right 7px 
+		font-size 20px 
+	}
+}

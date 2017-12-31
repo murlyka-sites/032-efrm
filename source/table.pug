@@ -4,16 +4,28 @@ html(lang="ru")
 		include pug/head.pug
 	body.page
 		.date-table
-			header.toolbar
-				a.toolbar__button(href="#")
-					span.toolbar__icon: i.fa.fa-calendar
-					|  Выбор недели
-				a.toolbar__button(href="#")
-					span.toolbar__icon: i.fa.fa-users
-					|  Выбор мастера
-				a.toolbar__button(href="#")
-					span.toolbar__icon: i.fa.fa-user-plus
-					|  Выбор услуги
+			header.top-menu
+				.top-menu__item
+					a.top-menu__button(href="#")
+						span.top-menu__icon: i.fa.fa-calendar
+						span.top-menu__inner  Выбор недели
+					.dropdown.hidden
+						a.dropdown__item(href="#") Текущая неделя (25.11.17-01.11.18)
+						a.dropdown__item(href="#") Следующая неделя (02.01.18-07.01.18)
+
+
+				.top-menu__item
+					a.top-menu__button(href="#")
+						span.top-menu__icon: i.fa.fa-users
+						span.top-menu__innern  Выбор мастера
+				.top-menu__item
+					a.top-menu__button(href="#")
+						span.top-menu__icon: i.fa.fa-user-plus
+						span.top-menu__inner
+							|  Алексей
+							br
+							| Петропаловскомчатский
+
 			table.table-with-date
 				tr.table-with-date__header
 					th.table-with-date__cell Пн

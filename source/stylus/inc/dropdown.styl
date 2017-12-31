@@ -1,0 +1,32 @@
+.dropdown {
+	position absolute
+	left 0
+	top 100%
+	z-index 10
+	box-shadow 0px 9px 13px 0 rgba(46, 46, 46, 0.24)
+	font-size 20px
+	text-align left
+	min-width 430px 
+	
+	&__inner {
+		display inline-block
+	}
+
+	&__item {
+		box-sizing border-box
+		display block
+		width 100%
+		padding 20px 10px 20px 40px 
+		border-bottom 1px solid #f1f1f1
+		text-decoration none
+		color  #1c1d1c 
+		background white
+		
+		&:hover,
+		&_active {
+			border-color $color-denim 
+			background $color-denim 
+			color white
+		}
+	}
+}

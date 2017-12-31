@@ -1,0 +1,19 @@
+html(lang="ru")
+	head
+		title Выбор недели
+		include pug/head.pug
+	body.page
+		.touch-menu
+			header.touch-menu__header.paper-denim.color-white
+				i.touch-menu__icon.fa.fa-calendar
+				|  Выбор недели
+			ul.touch-menu__body
+				li.touch-menu__item Текущая неделя (25.11.17-01.11.18)
+				li.touch-menu__item Следующая неделя (02.01.18-07.01.18)
+				li.touch-menu__item.touch-menu__item_active Неделя с 08.01.18-15.01.18
+
+
+			
+			.touch-menu__foo
+				button.touch-menu__button.button.button_theme_denim Дальше
+		include pug/scripts.pug

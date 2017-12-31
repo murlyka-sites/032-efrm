@@ -1,11 +1,22 @@
 @import "inc/variables"
 @import "inc/color"
 
+html,
+body {
+	height 100%
+}
+
 .page {
 	padding 0
 	margin 0
 	font-family "Open Sans", sans-serif
+	font-weight 600
+	
+	&_full {
+	}
 }
+
+
 
 .paper-denim {
 	background-color $color-denim
@@ -383,46 +394,6 @@
 	}
 }
 
-.toolbar {
-	background $color-steel-blue 
-	
-	@media (min-width 768px) {
-		display flex
-	}
-
-	&__button {
-		display block
-		border-bottom 2px solid $color-denim
-		font-size 14px 
-		font-weight 600 
-		line-height 1
-		padding 20px
-		text-align center 
-		text-decoration none
-		color white
-		
-		@media (min-width 768px) {
-			border-bottom none 
-			margin-right 40px 
-		}
-		
-		@media (min-width 992px) {
-			margin-right 115px 
-		}
-		
-		&:last-child {
-			border-bottom none
-			border none
-		}
-	}
-	
-	&__icon {
-		display inline-block
-		margin-right 5px 
-		font-size 20px 
-	}
-}
-
 .table-with-date {
 	width 100%
 	font-weight 600  
@@ -707,5 +678,7 @@
 	}
 }
 
-
+@import "inc/dropdown"
+@import "inc/top-menu"
+@import "inc/touch-menu"
 @import "inc/answer"
