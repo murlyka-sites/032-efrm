@@ -7,7 +7,7 @@ html(lang="ru")
 			header.top-menu
 				.top-menu__item
 					a.top-menu__button(href="#")
-						span.top-menu__icon: i.fa.fa-calendar
+						img.top-menu__icon(src="images/calendar.svg" width="24" height="24")
 						span.top-menu__inner  Выбор недели
 					.dropdown.hidden
 						a.dropdown__item(href="#") Текущая неделя (25.11.17-01.11.18)
@@ -16,15 +16,13 @@ html(lang="ru")
 
 				.top-menu__item
 					a.top-menu__button(href="#")
-						span.top-menu__icon: i.fa.fa-users
+						img.top-menu__icon(src="images/account-multiple.svg" width="24" height="24")
 						span.top-menu__innern  Выбор мастера
 				.top-menu__item
 					a.top-menu__button(href="#")
-						span.top-menu__icon: i.fa.fa-user-plus
+						img.top-menu__icon(src="images/worker.svg" width="24" height="24")
 						span.top-menu__inner
-							|  Алексей
-							br
-							| Петропаловскомчатский
+							| Выбор услуги
 
 			table.table-with-date
 				tr.table-with-date__header
