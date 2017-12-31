@@ -78,14 +78,23 @@ body {
 
 
 
+.field-checkbox {
+	appearance none
+	border solid 2px $color-white-two
+	border-radius 2px
+	
+	
+	&:checked {
+		background url(../images/checked.svg) center / 160%
+	}
+}
+
 .field-radio,
 .field-checkbox {
 	box-sizing border-box
 	width 10px
 	height 10px
-	margin 0 3px 0 0
-	border solid 1px $color-white-two
-	border-radius 2px
+	margin 0 3px 0 0	
 	flex none
 	
 	@media (min-width 640px) {
