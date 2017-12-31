@@ -5,7 +5,12 @@ $('.touch-menu__item').click(function() {
 });
 
 $('.top-menu:first-child .top-menu__button').click(function() {
-	$(this).next().toggleClass("hidden")
+
+	
+
+	if(window.width > 768) {
+		$(this).next().toggleClass("hidden");
+		return false;
 });
 
 $('.dropdown__item').click(function() {
