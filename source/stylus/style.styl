@@ -464,7 +464,9 @@ body {
 		
 		
 		&_disabled {
+			background #e7e7e9 
 			color $color-white-two
+			cursor not-allowed
 		}
 	}
 	
@@ -512,14 +514,26 @@ body {
 		left 0
 		right 0
 		bottom 0
+		border-radius 0
 		cursor not-allowed
+		align-items center
+		justify-content center
 	}
 	
 	&__time {
 		padding 7px 
 		
 		@media (min-width 900px) {
+			display flex
+			align-items center
+			justify-content center
+			flex auto
+			font-size 40px 
 			padding 22px
+		}
+		
+		&_disabled {
+			font-size  
 		}
 	}
 	 
